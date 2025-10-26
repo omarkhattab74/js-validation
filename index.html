@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-danger-subtle">
+
+    <div class="header d-flex justify-content-center py-5">
+        <h1 class="title position-relative">Bookmarker</h1>
+    </div>
+
+    <div class="formcontainer container py-5">
+
+        <h2 class="text-center mb-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                class="fa-solid fa-bookmark"></i> </h2>
+        <div class="mb-3">
+            <label for="inputName" class="form-label">Site Name</label>
+            <input type="text" class="form-control border-0" id="inputName" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="inputUrl" class="form-label">Site URL</label>
+            <input type="url" class="form-control border-0" id="inputUrl" aria-describedby="emailHelp">
+        </div>
+
+        <button class="btn btn-warning px-5 text-white mx-auto d-block mt-5 submitbtn">submit</button>
+
+    </div>
+
+    <div class="container table-responsive my-4">
+        <table class="w-100 text-center table">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="alert" tabindex="-1" aria-labelledby="alert" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title d-flex gap-2 fs-5" id="alert">
+                        <div class="rounded-circle bg-danger xy"></div>
+                        <div class="rounded-circle bg-warning xy"></div>
+                        <div class="rounded-circle bg-success xy"></div>
+                    </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Site Name or Url is not valid, Please follow the rules below :</h4>
+                    <p class="mt-4"><i class="fa-solid fa-circle-right text-danger"></i> Site name must contain at least 3 characters</p>
+                    <p class="my-2"><i class="fa-solid fa-circle-right text-danger"></i> Site URL must be a valid one</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
